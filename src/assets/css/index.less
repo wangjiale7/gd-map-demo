@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,body {
+  height: 100%;
+}
+header {
+  padding: 12px 0;
+}
+
+/* 本文件只放置复用性高，特异性极低的样式 */
+.flex {
+  display: flex;
+}
+.flex-ab{ display: flex; align-items: baseline;}
+
+.flex-rc {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-rb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-ra {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-re {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex-part {
+  flex: 1;
+}
+
+.flex-cc {
+  display: flex;
+  align-items: center;
+}
+
+.flex-rc-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-rb-cc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-re-cc {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-ra-cc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex-direction: column;
+}
+
+.flex-fill {
+  flex-grow: 1;
+}
+
+/*  */
+.text-over-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.border-top {
+  border-top: 1px solid rgba(153, 153, 153, 0.2);
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+}
+
+.text-over-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
